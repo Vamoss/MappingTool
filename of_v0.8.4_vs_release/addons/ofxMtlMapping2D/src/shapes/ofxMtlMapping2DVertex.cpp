@@ -13,7 +13,7 @@ ofxMtlMapping2DVertex::ofxMtlMapping2DVertex()
     edgeIndex = -1;
 	
 	//Vertex
-	setSize(30, 30);
+	setSize(90, 90);
 	toBeRemoved = false;
     isDefiningTectureCoord = false;
 	updateCenter();

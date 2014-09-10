@@ -199,7 +199,7 @@ void ofxMtlMapping2DPolygon::updatePolyline()
         }
         
         for (int i=2; i <= 3; i++) {
-            for (it=vertices.end(); it!=vertices.begin(); it--) {
+            for (it=--vertices.end(); it!=vertices.begin(); it--) {
                 ofxMtlMapping2DVertex* vertex = *it;
                 
                 if (vertex->bIsOnAnEdge && vertex->edgeIndex == i) {

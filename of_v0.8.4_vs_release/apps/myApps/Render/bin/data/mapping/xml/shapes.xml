@@ -1,0 +1,24 @@
+<root>
+    <shape id="0">
+        <setting key="cols">2</setting>
+        <setting key="rows">2</setting>
+        <setting key="type">grid</setting>
+        <outputVertices>
+            <vertex x="0" y="0"></vertex>
+            <vertex x="512" y="0"></vertex>
+            <vertex x="1024" y="0"></vertex>
+            <vertex x="0" y="384"></vertex>
+            <vertex x="512" y="384"></vertex>
+            <vertex x="1024" y="384"></vertex>
+            <vertex x="0" y="768"></vertex>
+            <vertex x="512" y="768"></vertex>
+            <vertex x="1024" y="768"></vertex>
+        </outputVertices>
+        <inputPolygon>
+            <vertex x="0" y="0"></vertex>
+            <vertex x="1024" y="0"></vertex>
+            <vertex x="1024" y="768"></vertex>
+            <vertex x="0" y="768"></vertex>
+        </inputPolygon>
+    </shape>
+</root>
