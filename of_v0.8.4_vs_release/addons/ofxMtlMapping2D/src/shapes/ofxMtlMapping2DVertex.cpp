@@ -6,14 +6,12 @@ ofxMtlMapping2DVertex* ofxMtlMapping2DVertex::activeVertex = NULL;
 //--------------------------------------------------------------
 ofxMtlMapping2DVertex::ofxMtlMapping2DVertex()
 {
-	disableAllEvents();
-	enableMouseEvents();
 	enabled = false;
     bIsOnAnEdge = true;
     edgeIndex = -1;
 	
 	//Vertex
-	setSize(90, 90);
+	setSize(30, 30);
 	toBeRemoved = false;
     isDefiningTectureCoord = false;
 	updateCenter();

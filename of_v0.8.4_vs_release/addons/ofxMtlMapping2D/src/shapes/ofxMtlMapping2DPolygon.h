@@ -7,13 +7,11 @@
 #include "ofxMtlMapping2DSettings.h"
 #include "mtlUtils.h"
 #include "ofxMtlMapping2DVertex.h"
-
-//MSA Libs
-#include "ofxMSAInteractiveObject.h"
+#include "ofxMtlMapping2DInteractiveObject.h"
 
 //--------------------------------------------------------------
 //--------------------------------------------------------------
-class ofxMtlMapping2DPolygon : public ofxMSAInteractiveObject {
+class ofxMtlMapping2DPolygon : public ofxMtlMapping2DInteractiveObject {
 	
     public:
     

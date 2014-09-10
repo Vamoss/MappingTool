@@ -1,24 +1,63 @@
 <root>
     <shape id="0">
-        <setting key="cols">2</setting>
-        <setting key="rows">2</setting>
+        <setting key="cols">5.25521</setting>
+        <setting key="rows">7</setting>
         <setting key="type">grid</setting>
         <outputVertices>
-            <vertex x="0" y="0"></vertex>
-            <vertex x="512" y="0"></vertex>
-            <vertex x="1024" y="0"></vertex>
-            <vertex x="0" y="384"></vertex>
-            <vertex x="512" y="384"></vertex>
-            <vertex x="1024" y="384"></vertex>
-            <vertex x="0" y="768"></vertex>
-            <vertex x="512" y="768"></vertex>
-            <vertex x="1024" y="768"></vertex>
+            <vertex x="24" y="14"></vertex>
+            <vertex x="408" y="14"></vertex>
+            <vertex x="792" y="14"></vertex>
+            <vertex x="1176" y="14"></vertex>
+            <vertex x="1560" y="14"></vertex>
+            <vertex x="1944" y="14"></vertex>
+            <vertex x="24" y="163"></vertex>
+            <vertex x="408" y="163"></vertex>
+            <vertex x="792" y="163"></vertex>
+            <vertex x="1176" y="163"></vertex>
+            <vertex x="1560" y="163"></vertex>
+            <vertex x="1944" y="163"></vertex>
+            <vertex x="24" y="312"></vertex>
+            <vertex x="408" y="312"></vertex>
+            <vertex x="792" y="312"></vertex>
+            <vertex x="1176" y="312"></vertex>
+            <vertex x="1560" y="312"></vertex>
+            <vertex x="1944" y="312"></vertex>
+            <vertex x="24" y="462"></vertex>
+            <vertex x="408" y="462"></vertex>
+            <vertex x="792" y="462"></vertex>
+            <vertex x="1176" y="462"></vertex>
+            <vertex x="1560" y="462"></vertex>
+            <vertex x="1944" y="462"></vertex>
+            <vertex x="24" y="611"></vertex>
+            <vertex x="408" y="611"></vertex>
+            <vertex x="792" y="611"></vertex>
+            <vertex x="1176" y="611"></vertex>
+            <vertex x="1560" y="611"></vertex>
+            <vertex x="1944" y="611"></vertex>
+            <vertex x="24" y="761"></vertex>
+            <vertex x="408" y="761"></vertex>
+            <vertex x="792" y="761"></vertex>
+            <vertex x="1176" y="761"></vertex>
+            <vertex x="1560" y="761"></vertex>
+            <vertex x="1944" y="761"></vertex>
+            <vertex x="24" y="910"></vertex>
+            <vertex x="408" y="910"></vertex>
+            <vertex x="792" y="910"></vertex>
+            <vertex x="1176" y="910"></vertex>
+            <vertex x="1560" y="910"></vertex>
+            <vertex x="1944" y="910"></vertex>
+            <vertex x="24" y="1060"></vertex>
+            <vertex x="408" y="1060"></vertex>
+            <vertex x="792" y="1060"></vertex>
+            <vertex x="1176" y="1060"></vertex>
+            <vertex x="1560" y="1060"></vertex>
+            <vertex x="1944" y="1060"></vertex>
         </outputVertices>
         <inputPolygon>
-            <vertex x="0" y="0"></vertex>
-            <vertex x="1024" y="0"></vertex>
-            <vertex x="1024" y="768"></vertex>
-            <vertex x="0" y="768"></vertex>
+            <vertex x="10" y="136"></vertex>
+            <vertex x="752" y="136"></vertex>
+            <vertex x="752" y="859"></vertex>
+            <vertex x="10" y="859"></vertex>
         </inputPolygon>
     </shape>
 </root>

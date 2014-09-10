@@ -4,12 +4,11 @@
 #include "ofMain.h"
 #include "ofVec2f.h"
 
-//MSA Libs
-#include "ofxMSAInteractiveObject.h"
+#include "ofxMtlMapping2DInteractiveObject.h"
 
 //--------------------------------------------------------------
 //--------------------------------------------------------------
-class ofxMtlMapping2DVertex : public ofxMSAInteractiveObject {
+class ofxMtlMapping2DVertex : public ofxMtlMapping2DInteractiveObject {
 	
 public:
     

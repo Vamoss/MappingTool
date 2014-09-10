@@ -39,6 +39,9 @@ class ofxMtlMapping2D {
         vector<ofPolyline*> getMaskShapes();
         void chessBoard(int nbOfCol = 10);
 
+		void enableDrag();
+		void disableDrag();
+
     private:
         string _mappingXmlFilePath;
         ofFbo _fbo;

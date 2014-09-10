@@ -23,4 +23,6 @@ class ofApp : public ofBaseApp{
     private:
         ofxMtlMapping2D* _mapping;
 
+		ofImage grid;
+
 };

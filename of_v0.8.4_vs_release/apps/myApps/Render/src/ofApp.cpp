@@ -4,10 +4,13 @@
 void ofApp::setup(){
     ofSetFrameRate(30);
     ofBackground(50);
+
+	grid.loadImage("grid.png");
     
     // ----
     _mapping = new ofxMtlMapping2D();
-    _mapping->init(ofGetWidth(), ofGetHeight(), "mapping/xml/shapes.xml", "mapping/controls/mapping.xml");
+	_mapping->init(grid.width, grid.height, "mapping/xml/shapes.xml", "mapping/controls/mapping.xml");
+	_mapping->disableDrag();
 }
 
 //--------------------------------------------------------------
@@ -19,16 +22,12 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){    
-    // ----
     _mapping->bind();
-    
-        // draw a test pattern
-        _mapping->chessBoard();
-    
+    ofSetColor(255);
+    grid.draw(0, 0);
     _mapping->unbind();
     
-    
-    //-------- mapping of the towers/shapes
+    ofSetColor(255);
     _mapping->draw();
     //_mapping->drawFbo();
     
@@ -41,12 +40,6 @@ void ofApp::draw(){
 //    }
 //    ofEndShape(true);
     
-    
-    // Draw some instructions.
-    /*
-    ofSetColor(0);
-    ofDrawBitmapString("'m' open the mapping controls.\n", 20, 20);
-     */
 }
 
 //--------------------------------------------------------------

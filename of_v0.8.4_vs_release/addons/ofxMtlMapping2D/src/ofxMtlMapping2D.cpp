@@ -810,3 +810,21 @@ void ofxMtlMapping2D::chessBoard(int nbOfCol)
 }
 
 
+//--------------------------------------------------------------
+void ofxMtlMapping2D::enableDrag(){
+    list<ofxMtlMapping2DShape*>::iterator it;
+	 for (it=ofxMtlMapping2DShapes::pmShapes.begin(); it!=ofxMtlMapping2DShapes::pmShapes.end() ; it++) {
+        ofxMtlMapping2DShape* shape = *it;
+		shape->enableDrag();
+	 }
+}
+
+//--------------------------------------------------------------
+void ofxMtlMapping2D::disableDrag(){
+    list<ofxMtlMapping2DShape*>::iterator it;
+	 for (it=ofxMtlMapping2DShapes::pmShapes.begin(); it!=ofxMtlMapping2DShapes::pmShapes.end() ; it++) {
+        ofxMtlMapping2DShape* shape = *it;
+		shape->disableDrag();
+	 }
+}
+

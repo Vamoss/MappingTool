@@ -18,10 +18,7 @@ void ofxMtlMapping2DPolygon::resetActivePolygonVars(){
 //--------------------------------------------------------------
 //--------------------------------------------------------------
 ofxMtlMapping2DPolygon::ofxMtlMapping2DPolygon()
-{    
-    disableAllEvents();
-	enableMouseEvents();
-    
+{   
     // ----
     polyline = new ofPolyline();
     shapeId = -1;
@@ -396,7 +393,7 @@ void ofxMtlMapping2DPolygon::onMouseMove(int x, int y)
 //--------------------------------------------------------------
 void ofxMtlMapping2DPolygon::onDragOver(int x, int y, int button)
 {    
-    if(ofxMtlMapping2DVertex::activeVertex)
+    if(ofxMtlMapping2DVertex::activeVertex || !canDrag)
         return;
 
     if(activePolygon == this) {
@@ -408,7 +405,7 @@ void ofxMtlMapping2DPolygon::onDragOver(int x, int y, int button)
 //--------------------------------------------------------------
 void ofxMtlMapping2DPolygon::onDragOutside(int x, int y, int button)
 {
-    if(ofxMtlMapping2DVertex::activeVertex)
+    if(ofxMtlMapping2DVertex::activeVertex || !canDrag)
         return;
     
     if(activePolygon == this) {
