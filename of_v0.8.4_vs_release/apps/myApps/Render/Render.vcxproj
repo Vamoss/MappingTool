@@ -58,7 +58,7 @@
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);..\..\..\addons\ofxXmlSettings\libs;..\..\..\addons\ofxXmlSettings\src;..\..\..\addons\ofxMSAInteractiveObject\libs;..\..\..\addons\ofxMSAInteractiveObject\src;..\..\..\addons\ofxMtlMapping2D\libs;..\..\..\addons\ofxMtlMapping2D\src;..\..\..\addons\ofxMtlMapping2D\src\controls;..\..\..\addons\ofxMtlMapping2D\src\settings;..\..\..\addons\ofxMtlMapping2D\src\shapes;..\..\..\addons\ofxMtlMapping2D\src\utils;..\..\..\addons\ofxMtlMapping2D\src\utils\homography;..\..\..\addons\ofxUI\libs;..\..\..\addons\ofxUI\src</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);..\..\..\addons\ofxXmlSettings\libs;..\..\..\addons\ofxXmlSettings\src;..\..\..\addons\ofxMapper\src;..\..\..\addons\ofxUI\libs;..\..\..\addons\ofxUI\src;..\..\..\addons\ofxNavigation\src;..\..\..\addons\ofxVideoPlaylist\src</AdditionalIncludeDirectories>
       <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
     <Link>
@@ -75,7 +75,7 @@
       <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);..\..\..\addons\ofxXmlSettings\libs;..\..\..\addons\ofxXmlSettings\src;..\..\..\addons\ofxMSAInteractiveObject\libs;..\..\..\addons\ofxMSAInteractiveObject\src;..\..\..\addons\ofxMtlMapping2D\libs;..\..\..\addons\ofxMtlMapping2D\src;..\..\..\addons\ofxMtlMapping2D\src\controls;..\..\..\addons\ofxMtlMapping2D\src\settings;..\..\..\addons\ofxMtlMapping2D\src\shapes;..\..\..\addons\ofxMtlMapping2D\src\utils;..\..\..\addons\ofxMtlMapping2D\src\utils\homography;..\..\..\addons\ofxUI\libs;..\..\..\addons\ofxUI\src</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);..\..\..\addons\ofxXmlSettings\libs;..\..\..\addons\ofxXmlSettings\src;..\..\..\addons\ofxMapper\src;..\..\..\addons\ofxUI\libs;..\..\..\addons\ofxUI\src;..\..\..\addons\ofxNavigation\src;..\..\..\addons\ofxVideoPlaylist\src</AdditionalIncludeDirectories>
       <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
     <Link>
@@ -90,26 +90,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\addons\ofxMtlMapping2D\src\shapes\ofxMtlMapping2DInteractiveObject.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxMapper\src\ofxMapperControlMenu.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\ofApp.cpp" />
     <ClCompile Include="..\..\..\addons\ofxXmlSettings\src\ofxXmlSettings.cpp" />
     <ClCompile Include="..\..\..\addons\ofxXmlSettings\libs\tinyxml.cpp" />
     <ClCompile Include="..\..\..\addons\ofxXmlSettings\libs\tinyxmlerror.cpp" />
     <ClCompile Include="..\..\..\addons\ofxXmlSettings\libs\tinyxmlparser.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxMSAInteractiveObject\src\ofxMSAInteractiveObject.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxMtlMapping2D\src\controls\ofxMtlMapping2DControls.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxMtlMapping2D\src\ofxMtlMapping2D.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxMtlMapping2D\src\ofxMtlMapping2DShapes.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxMtlMapping2D\src\settings\ofxMtlMapping2DSettings.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxMtlMapping2D\src\shapes\ofxMtlMapping2DGrid.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxMtlMapping2D\src\shapes\ofxMtlMapping2DInput.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxMtlMapping2D\src\shapes\ofxMtlMapping2DMask.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxMtlMapping2D\src\shapes\ofxMtlMapping2DPolygon.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxMtlMapping2D\src\shapes\ofxMtlMapping2DQuad.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxMtlMapping2D\src\shapes\ofxMtlMapping2DShape.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxMtlMapping2D\src\shapes\ofxMtlMapping2DTriangle.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxMtlMapping2D\src\shapes\ofxMtlMapping2DVertex.cpp" />
     <ClCompile Include="..\..\..\addons\ofxUI\src\ofxUI2DGraph.cpp" />
     <ClCompile Include="..\..\..\addons\ofxUI\src\ofxUI2DPad.cpp" />
     <ClCompile Include="..\..\..\addons\ofxUI\src\ofxUIBaseDraws.cpp" />
@@ -156,27 +143,16 @@
     <ClCompile Include="..\..\..\addons\ofxUI\src\ofxUIWidgetWithLabel.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\addons\ofxMtlMapping2D\src\shapes\ofxMtlMapping2DInteractiveObject.h" />
+    <ClInclude Include="..\..\..\addons\ofxMapper\src\ofxMapper.h" />
+    <ClInclude Include="..\..\..\addons\ofxMapper\src\ofxMapperBlendControl.h" />
+    <ClInclude Include="..\..\..\addons\ofxMapper\src\ofxMapperControl.h" />
+    <ClInclude Include="..\..\..\addons\ofxMapper\src\ofxMapperControlMenu.h" />
+    <ClInclude Include="..\..\..\addons\ofxMapper\src\ofxMapperQuickCorner.h" />
+    <ClInclude Include="..\..\..\addons\ofxNavigation\src\ofxNavigation.h" />
+    <ClInclude Include="..\..\..\addons\ofxVideoPlaylist\src\ofxVideoPlaylist.h" />
     <ClInclude Include="src\ofApp.h" />
     <ClInclude Include="..\..\..\addons\ofxXmlSettings\src\ofxXmlSettings.h" />
     <ClInclude Include="..\..\..\addons\ofxXmlSettings\libs\tinyxml.h" />
-    <ClInclude Include="..\..\..\addons\ofxMSAInteractiveObject\src\ofxMSAInteractiveObject.h" />
-    <ClInclude Include="..\..\..\addons\ofxMtlMapping2D\src\controls\ofxMtlMapping2DControls.h" />
-    <ClInclude Include="..\..\..\addons\ofxMtlMapping2D\src\ofxMtlMapping2D.h" />
-    <ClInclude Include="..\..\..\addons\ofxMtlMapping2D\src\ofxMtlMapping2DMode.h" />
-    <ClInclude Include="..\..\..\addons\ofxMtlMapping2D\src\ofxMtlMapping2DShapes.h" />
-    <ClInclude Include="..\..\..\addons\ofxMtlMapping2D\src\ofxMtlMapping2DShapeType.h" />
-    <ClInclude Include="..\..\..\addons\ofxMtlMapping2D\src\settings\ofxMtlMapping2DSettings.h" />
-    <ClInclude Include="..\..\..\addons\ofxMtlMapping2D\src\shapes\ofxMtlMapping2DGrid.h" />
-    <ClInclude Include="..\..\..\addons\ofxMtlMapping2D\src\shapes\ofxMtlMapping2DInput.h" />
-    <ClInclude Include="..\..\..\addons\ofxMtlMapping2D\src\shapes\ofxMtlMapping2DMask.h" />
-    <ClInclude Include="..\..\..\addons\ofxMtlMapping2D\src\shapes\ofxMtlMapping2DPolygon.h" />
-    <ClInclude Include="..\..\..\addons\ofxMtlMapping2D\src\shapes\ofxMtlMapping2DQuad.h" />
-    <ClInclude Include="..\..\..\addons\ofxMtlMapping2D\src\shapes\ofxMtlMapping2DShape.h" />
-    <ClInclude Include="..\..\..\addons\ofxMtlMapping2D\src\shapes\ofxMtlMapping2DTriangle.h" />
-    <ClInclude Include="..\..\..\addons\ofxMtlMapping2D\src\shapes\ofxMtlMapping2DVertex.h" />
-    <ClInclude Include="..\..\..\addons\ofxMtlMapping2D\src\utils\homography\homography.h" />
-    <ClInclude Include="..\..\..\addons\ofxMtlMapping2D\src\utils\mtlUtils.h" />
     <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUI.h" />
     <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUI2DGraph.h" />
     <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUI2DPad.h" />

@@ -1,0 +1,26 @@
+<install>
+
+	<version>1.0</version>
+	<author>Harrison at SuperUber</author>
+	<url>https://github.com/superuber/ofxNavigation</url>
+
+	<requires>
+	</requires>
+
+	<add>	
+		<src>
+			<folder name="addons/ofxNavigation/src">			
+				<file>../../../addons/ofxNavigation/src/ofxNavigation.h</file>
+			</folder>
+		</src>
+
+		<include>
+			<path>../../../addons/ofxNavigation/src</path>
+		</include>
+
+		<link>
+		</link>
+
+	</add>
+
+</install>
